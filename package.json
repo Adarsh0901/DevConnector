@@ -1,0 +1,30 @@
+{
+  "name": "devconnector",
+  "version": "1.0.0",
+  "description": "Social Media Web Page for Developers",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server",
+    "client": "npm start --prefix client",
+    "con": "concurrently \"npm run dev\" \"npm run client\""
+  },
+  "author": "Adarsh Shukla",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.2",
+    "gravatar": "^1.8.2",
+    "gravator": "^1.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.10",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "concurrently": "^6.3.0",
+    "nodemon": "^2.0.13"
+  }
+}
